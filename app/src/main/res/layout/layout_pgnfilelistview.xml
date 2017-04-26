@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f18f6b">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background"/>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="left"
+        android:layout_marginTop="16dp"
+        android:height="?actionBarSize"
+        android:background="@android:color/transparent"
+        android:layout_gravity="left" />
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="33sp"
+        android:text="제목"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_toEndOf="@+id/backButton"
+        android:layout_marginLeft="15dp" />
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:id="@+id/backButton"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/icon_navi05"
+        android:onClick="BackButton"/>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewPGN"
+        android:numColumns="auto_fit"
+        android:columnWidth="288dp"
+        android:verticalSpacing="9dp"
+        android:horizontalSpacing="18dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginRight="23dp" />
+</RelativeLayout>

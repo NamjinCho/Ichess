@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pgn"
+    android:weightSum="1"
+    android:id="@+id/RootView"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_orange"
+        android:id="@+id/background" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="left"
+        android:layout_marginTop="16dp"
+        android:height="?actionBarSize"
+        android:background="@android:color/transparent"
+        android:layout_gravity="left" />
+
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:id="@+id/backButton"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/icon_navi05"
+        android:onClick="BackButton"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:src="@drawable/textbox"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="64dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:id="@+id/editView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="23dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        >
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="39dp"
+            android:id="@+id/titleboximg"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bg_input_orange"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="9dp" />
+        <EditText
+            android:layout_width="500dp"
+            android:layout_height="39dp"
+            android:id="@+id/titlebox"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="#00000000"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="15dp" />
+
+        <FrameLayout
+            android:layout_width="58dp"
+            android:layout_height="39dp"
+            android:id="@+id/findbutton"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="9dp"
+            android:layout_below="@+id/titleboximg"
+            android:layout_alignParentEnd="true"
+            android:onClick="ButtonFind">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_small"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="찾기"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/pgn"
+                android:layout_below="@+id/findbutton"
+                android:layout_alignStart="@+id/imageButton"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="39dp"
+            android:id="@+id/imageView3"
+            android:background="@drawable/bg_input_orange"
+            android:layout_alignTop="@+id/findbutton"
+            android:layout_toStartOf="@+id/findbutton"
+            android:layout_marginRight="9dp" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="39dp"
+            android:id="@+id/editText"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="temp.pgn"
+            android:background="#00000000"
+            android:focusable="false"
+            android:layout_marginRight="9dp"
+            android:layout_alignBottom="@+id/findbutton"
+            android:layout_toStartOf="@+id/findbutton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:id="@+id/textView20"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_above="@+id/findbutton"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/titlebox"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="파일선택"
+            android:id="@+id/textView21"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_toStartOf="@+id/imageView3"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_marginRight="15dp" />
+
+        <FrameLayout
+            android:layout_width="205dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="ButtonCreate"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/frameLayout3"
+            android:layout_marginBottom="23dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_white"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기보 올리기"
+                    android:id="@+id/textView23"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/pgn"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="70dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_plus_orange"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="25dp" />
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="39dp"
+            android:id="@+id/imageView29"
+            android:background="@drawable/bg_input_orange"
+            android:layout_marginRight="9dp"
+            android:layout_alignTop="@+id/textView21"
+            android:layout_alignStart="@+id/titleboximg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="레벨"
+            android:id="@+id/textView27"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignStart="@+id/textView20"
+            android:layout_alignTop="@+id/imageView29"
+            android:layout_alignBottom="@+id/imageView29" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/level_spinner"
+            android:layout_alignTop="@+id/textView21"
+            android:layout_alignStart="@+id/imageView29"
+            android:layout_alignEnd="@+id/imageView29"
+            android:layout_alignBottom="@+id/imageView29" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="33sp"
+        android:text="기보 올리기"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_toEndOf="@+id/backButton" />
+
+</RelativeLayout>

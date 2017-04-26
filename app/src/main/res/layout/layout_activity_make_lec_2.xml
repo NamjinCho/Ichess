@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ichessprogrammer.chesseducate.lecture.Make_Lec_Act2"
+    android:id="@+id/RootView">
+    <fragment
+        android:name="com.ichessprogrammer.chesseducate.lecture.make_lec_board_fragment"
+        android:id="@+id/boardfragment"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <fragment
+        android:name="com.ichessprogrammer.chesseducate.lecture.make_lec_explain_fragment"
+        android:id="@+id/explainfragment"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

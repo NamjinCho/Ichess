@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        >
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:id="@+id/prob_piece"
+        android:background="@drawable/textbox"
+        android:layout_width="360dp"
+        android:layout_height="170dp">
+        
+       
+        <ScrollView
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/showPgnScrollView"
+            android:visibility="invisible" />
+                    
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/showMarkLayout"
+            android:visibility="invisible"
+            >
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/btn_small"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/icon_smallbtn01"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/btn_small"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/icon_smallbtn02"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/btn_small"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/icon_smallbtn03"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/btn_small"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/icon_smallbtn04"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/btn_small"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/icon_smallbtn05"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        
+        <LinearLayout
+            android:id="@+id/black_board"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="350dp"
+            android:background="@drawable/bg_make_white"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:src="@drawable/alpha90bk"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp"
+                android:layout_width="47dp"
+                android:layout_height="40dp"
+                android:id="@+id/king_b" />
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/alpha90bq"
+                android:layout_width="47dp"
+                android:layout_height="35dp"
+                android:id="@+id/queen_b"
+                />
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:src="@drawable/alpha90br"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:layout_width="47dp"
+                android:layout_height="35dp"
+                android:id="@+id/rook_b"
+                />
+            <ImageView
+                android:src="@drawable/alpha90bb"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp"
+                android:layout_width="47dp"
+                android:layout_height="35dp"
+                android:id="@+id/bishop_b"
+                 />
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:src="@drawable/alpha90bn"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp"
+                android:layout_width="47dp"
+                android:layout_height="35dp"
+                android:id="@+id/knight_b" />
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:src="@drawable/alpha90bp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp"
+                android:layout_width="47dp"
+                android:layout_height="35dp"
+                android:id="@+id/pawn_b"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/white_board"
+            android:background="@drawable/bg_make_black"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp">
+             <ImageView
+                 android:layout_marginTop="2dp"
+                 android:scaleType="fitXY"
+                 android:layout_marginLeft="10dp"
+                android:layout_width="47dp"
+                 android:src="@drawable/alpha90wk"
+                android:layout_height="35dp"
+                android:id="@+id/king_w" />
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp"
+                android:layout_width="47dp"
+                android:layout_height="35dp"
+                android:src="@drawable/alpha90wq"
+                android:id="@+id/queen_w"
+               />
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp"
+                android:layout_width="47dp"
+                android:layout_height="35dp"
+                android:src="@drawable/alpha90wr"
+                android:id="@+id/rook_w"
+                 />
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp"
+                android:layout_width="47dp"
+                android:layout_height="35dp"
+                android:src="@drawable/alpha90wb"
+                android:id="@+id/bishop_w"
+               />
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp"
+                android:layout_width="47dp"
+                android:layout_height="35dp"
+                android:src="@drawable/alpha90wn"
+                android:id="@+id/knight_w"
+                />
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/alpha90wp"
+                android:layout_width="47dp"
+                android:layout_height="35dp"
+                android:id="@+id/pawn_w"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="120dp"
+            android:id="@+id/input_fen_layout"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/bg_input_blue"
+                android:id="@+id/editFEN"
+                android:hint="  FEN 값을 입력하세요!"
+                android:textColorHint="#fff"
+                />
+
+            <FrameLayout
+                android:id="@+id/buttonFEN"
+                android:layout_width="69dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="40dp">
+                <ImageView
+                    android:layout_width="69dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_small"
+                    />
+                <TextView
+                    android:id="@+id/inputText"
+                    android:textColor="#6e9aca"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    android:text="입력"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+            <!--
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEN입력"
+                android:id="@+id/buttonFEN"
+                android:layout_below="@+id/editFEN"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/editFEN" />
+-->
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="360dp"
+        android:layout_height="120dp">
+        <FrameLayout
+            android:id="@+id/defaultSetting"
+            android:layout_width="79dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_height="54dp">
+            <ImageView
+                android:layout_width="79dp"
+                android:layout_height="54dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_white"
+            />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="26dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#6e9aca"
+                android:id="@+id/defaultText1"
+                android:text="기본"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="12sp"
+                android:textColor="#6e9aca"
+                android:id="@+id/defaultText2"
+                android:text="Default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="79dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:id="@+id/flipSetting"
+            android:layout_height="54dp"
+            android:layout_toEndOf="@+id/defaultSetting">
+            <ImageView
+                android:layout_width="79dp"
+                android:layout_height="54dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_white"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="18dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#6e9aca"
+                android:id="@+id/flipText1"
+                android:text="뒤집기"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="28dp"
+                android:textSize="12sp"
+                android:textColor="#6e9aca"
+                android:id="@+id/flipText2"
+                android:text="Flip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="79dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:id="@+id/resetSetting"
+            android:layout_height="54dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/flipSetting">
+            <ImageView
+                android:layout_width="79dp"
+                android:layout_height="54dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_white"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="26dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#6e9aca"
+                android:id="@+id/resetText1"
+                android:text="리셋"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="24dp"
+                android:textSize="12sp"
+                android:textColor="#6e9aca"
+                android:id="@+id/resetText2"
+                android:text="Reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="106dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:id="@+id/solutionSetting"
+            android:layout_height="113dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/resetSetting">
+            <ImageView
+                android:layout_width="106dp"
+                android:layout_height="113dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_white"
+                />
+            <TextView
+                android:layout_marginTop="33dp"
+                android:layout_marginLeft="23dp"
+                android:id="@+id/solutionText1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#6e9aca"
+                android:text="정답셋팅"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="41dp"
+                android:layout_marginLeft="23dp"
+                android:id="@+id/lectureText"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#6e9aca"
+                android:visibility="invisible"
+                android:text="강의시작"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="32dp"
+                android:textSize="12sp"
+                android:textColor="#6e9aca"
+                android:id="@+id/solutionText2"
+                android:text="Solution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="79dp"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/previousSetting"
+            android:layout_marginRight="2dp"
+            android:layout_height="54dp"
+            android:layout_alignBottom="@+id/solutionSetting"
+            android:layout_toEndOf="@+id/defaultSetting">
+            <ImageView
+                android:layout_width="79dp"
+                android:layout_height="54dp"
+                android:scaleType="fitXY"
+                android:id="@+id/previousImage"
+                android:src="@drawable/btn_white"
+
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="26dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#6e9aca"
+                android:id="@+id/previousText1"
+                android:text="이전"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="17dp"
+                android:textSize="12sp"
+                android:textColor="#6e9aca"
+                android:id="@+id/previousText2"
+                android:text="Previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/nextSetting"
+            android:layout_width="79dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_height="54dp"
+            android:layout_alignTop="@+id/previousSetting"
+            android:layout_toEndOf="@+id/previousSetting">
+            <ImageView
+                android:layout_width="79dp"
+                android:layout_height="54dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_white"
+                android:id="@+id/nextImage"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="26dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#6e9aca"
+                android:id="@+id/nextText1"
+                android:text="다음"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="24dp"
+                android:textSize="12sp"
+                android:textColor="#6e9aca"
+                android:id="@+id/nextText2"
+                android:text="Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+<!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonComplete"
+        android:layout_below="@+id/buttonDefault"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/buttonClear" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기본셋팅"
+        android:id="@+id/buttonDefault"
+        android:layout_below="@+id/buttonFEN"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비우기"
+        android:id="@+id/buttonClear"
+        android:layout_alignTop="@+id/buttonDefault"
+        android:layout_alignEnd="@+id/king_b" />
+        -->
+
+</LinearLayout>

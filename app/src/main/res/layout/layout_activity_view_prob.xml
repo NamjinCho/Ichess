@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ichessprogrammer.chesseducate.Problem.ProblemView"
+    android:id="@+id/RootView">
+    <fragment
+        android:name="com.ichessprogrammer.chesseducate.Problem.view_prob_board_fragment"
+        android:id="@+id/boardfragment"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@color/color9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="문제 설명"
+            android:id="@+id/problemExplain"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="힌트 보기"
+            android:id="@+id/buttonHint"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="랭킹 보기"
+            android:id="@+id/buttonRanking"
+            android:layout_alignBottom="@+id/buttonHint"
+            android:layout_toEndOf="@+id/buttonHint" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewRanking"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/problemExplain"
+            android:layout_above="@+id/buttonHint" />
+    </RelativeLayout>
+</LinearLayout>

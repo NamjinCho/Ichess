@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/current"
+            android:layout_marginLeft="12dp"
+            android:background="#fffacd"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBlack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="black"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/before"
+            android:visibility="invisible"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="이전"
+            android:textSize="12sp"
+            />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="0sp"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="다음"
+            android:textSize="12sp"
+            />
+        <Button
+            android:id="@+id/loopB"
+            android:layout_width="0sp"
+            android:visibility="invisible"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="이전"
+            android:textColor="#b4adad"
+            android:textSize="12sp"
+            />
+        <Button
+            android:id="@+id/loopN"
+            android:layout_width="0sp"
+            android:visibility="invisible"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="다음"
+            android:textColor="#b4adad"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pnglist_spinner" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <LinearLayout
+            android:id="@+id/showPgn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+    <!--
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:orientation="vertical"
+           android:layout_weight="5">
+   
+           <TextView
+               android:id="@+id/selection"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <GridView
+               android:id="@+id/grid"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:verticalSpacing="1dp"
+               android:horizontalSpacing="5dp"
+               android:numColumns="2"
+               android:columnWidth="100dp"
+               android:stretchMode="columnWidth"
+               android:gravity="center"/>
+       </LinearLayout>
+   -->
+</LinearLayout>

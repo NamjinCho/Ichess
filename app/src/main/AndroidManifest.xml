@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ichessprogrammer.chesseducate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:isGame="true"
+        >
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+        <activity android:name=".SettingActivity" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".FirstLoadingActivity"  android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".SignupActivity" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".MainActivity" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".PGN.PGN_View" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".NormalBoard.BoardLoading" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".NormalBoard.BoardList" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Gallery" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".CategoryList" android:launchMode="singleTask" android:hardwareAccelerated="false"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".NormalBoard.VideoViewer" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Problem.QuizLoading" android:screenOrientation="landscape" android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Problem.make_prob_select" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".Edit_PGN" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Problem.QuizList"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" android:launchMode="singleTask"/>
+        <activity android:name=".KakaoTalkMainActivity" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+
+        </activity>
+        <activity android:name=".Eddit_Menu" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".PGN.Quiz_PGN_View" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".PGN.ListViewActivity" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".PGN.PGNFileListView" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".PGN.UploadPGN" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".PGN.PGNLoading1" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".PGN.PGNLoading2" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".StateActivity" android:launchMode="singleTask" android:hardwareAccelerated="false"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".lecture.MakeBoard"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask"/>
+        <activity android:name=".lecture.Make_Lec_Act2" android:screenOrientation="landscape" android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".lecture.make_lec_finish" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".lecture.LecturLoading" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".lecture.LectureList" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".lecture.LectrueView" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".lecture.make_lec_select" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".lecture.pgnLoading" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".lecture.make_lec_pgn_list" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".lecture.pgnLoading2" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Problem.lectureListFroProb" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Problem.problemLoading" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Problem.MakeBoard" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+            <activity android:name=".Problem.make_prob_2" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".lecture.LecturWithProblem" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".lecture.LectureLoading2" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Problem.ProblemView" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".OtherLoginActivity" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".JoinActivity" android:launchMode="singleTask" android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+    </application>
+
+</manifest>

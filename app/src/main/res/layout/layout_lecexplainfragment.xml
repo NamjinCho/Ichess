@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/color9">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:id="@+id/listViewExplain"
+        android:layout_weight="0.16" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/board_explain"
+        android:hint="설명을 입력하세요"
+        android:layout_weight="0.16" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마크 추가"
+            android:id="@+id/buttonMark" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설명 추가"
+            android:id="@+id/buttonExplain" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonPre"
+            android:src="@drawable/pre_icon"
+            android:background="@color/color9"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonNext"
+            android:src="@drawable/next_icon"
+            android:background="@color/color9"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/buttonPre" />
+    </RelativeLayout>
+
+</LinearLayout>

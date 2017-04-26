@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    android:background="#dddddd"
+    android:weightSum="2">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <TextView android:id="@+id/text_item_category"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="카테고리"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:background="#ffffff"
+            android:padding="3dp"/>
+        <TextView android:id="@+id/text_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="항목이름"
+            android:gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:background="#ffffff"
+            android:padding="3dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/img_flag"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_weight="1"
+        android:src="@drawable/easy_icon"
+        android:background="#ffffff"
+        android:layout_marginLeft="3dp"/>
+</LinearLayout>

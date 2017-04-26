@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6e9aca"
+    tools:context="com.ichessprogrammer.chesseducate.Problem.MakeBoard"
+    android:id="@+id/RootView">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background"
+        android:scaleType="fitXY"/>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="left"
+        android:layout_marginTop="16dp"
+        android:height="?actionBarSize"
+        android:background="@android:color/transparent"
+        android:layout_gravity="left" />
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="33sp"
+        android:text="제목"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_toEndOf="@+id/backButton"
+        android:layout_marginLeft="15dp" />
+
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:id="@+id/backButton"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/icon_navi05"
+        android:onClick="BackButton"/>
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="310dp"
+        android:layout_marginTop="71dp">
+        <include layout="@layout/layout_chessboard_background"
+            android:id="@+id/backgrounds"
+            android:layout_marginLeft="23dp"
+            android:layout_width="302dp"
+            android:layout_height="302dp">
+        </include>
+            <fragment
+                android:name="com.ichessprogrammer.chesseducate.Problem.make_prob_board_fragment"
+                android:layout_marginTop="12dp"
+                android:id="@+id/boardfragment"
+                android:layout_marginLeft="49dp"
+                android:layout_width="264dp"
+                android:layout_height="264dp"/>
+
+
+        <fragment
+            android:name="com.ichessprogrammer.chesseducate.Problem.make_prob_piece_fragment"
+            android:id="@+id/piecefragment"
+            android:layout_marginLeft="340dp"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            tools:layout="@layout/explain_fragment" />
+
+    </FrameLayout>
+
+
+
+</FrameLayout>
+
+<!--
+
+<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:id="@+id/backButton"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/icon_navi05"
+        android:onClick="BackButton"/>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="left"
+        android:layout_marginTop="16dp"
+        android:height="?actionBarSize"
+        android:background="@android:color/transparent"
+        android:layout_gravity="left" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="310dp"
+        android:layout_marginTop="71dp">
+        <include layout="@layout/layout_chessboard_background"
+            android:id="@+id/background1"
+            android:layout_marginLeft="23dp"
+            android:layout_width="302dp"
+            android:layout_height="302dp">
+
+            <fragment
+                android:name="com.ichessprogrammer.chesseducate.lecture.make_lec_board_fragment"
+                android:layout_marginTop="12dp"
+                android:id="@+id/boardfragment1"
+                android:layout_marginLeft="26dp"
+                android:layout_width="264dp"
+                android:layout_height="264dp"/>
+        </include>
+        <fragment
+            android:name="com.ichessprogrammer.chesseducate.lecture.make_lec_piece_fragment"
+            android:id="@+id/piecefragment"
+            android:layout_marginLeft="15dp"
+
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            tools:layout="@layout/explain_fragment" />
+
+    </LinearLayout>
+
+
+
+    <fragment
+        android:name="com.ichessprogrammer.chesseducate.Problem.make_prob_board_fragment"
+        android:id="@+id/boardfragment"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <fragment
+        android:name="com.ichessprogrammer.chesseducate.Problem.make_prob_piece_fragment"
+        android:id="@+id/piecefragment"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+-->

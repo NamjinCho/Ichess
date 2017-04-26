@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color9">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="완료"
+        android:id="@+id/buttonComplete"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/direction_mark_icon" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/redqube_mark_icon"
+        android:src="@drawable/redqube_mark_icon"
+        android:layout_above="@+id/buttonComplete"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/x_mark_icon"
+        android:src="@drawable/xmark_icon"
+        android:layout_alignTop="@+id/direction_mark_icon"
+        android:layout_toEndOf="@+id/direction_mark_icon" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/blueqube_mark_icon"
+        android:src="@drawable/blueqube_mark_icon"
+        android:layout_above="@+id/buttonComplete"
+        android:layout_toEndOf="@+id/x_mark_icon" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/circle_mark_icon"
+        android:src="@drawable/circle_mark_icon"
+        android:layout_above="@+id/buttonComplete"
+        android:layout_toEndOf="@+id/redqube_mark_icon" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/direction_mark_icon"
+        android:src="@drawable/direction_mark_icon"
+        android:layout_alignTop="@+id/circle_mark_icon"
+        android:layout_toEndOf="@+id/circle_mark_icon" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/answerList"
+        android:layout_alignParentTop="true"
+        android:columnWidth="50dp"
+        android:numColumns="auto_fit"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/redqube_mark_icon"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root">
+
+    <ImageView
+        android:id="@+id/Background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/la">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:layout_marginTop="16dp"
+            android:height="?actionBarSize"
+            android:background="@android:color/transparent"
+            android:layout_gravity="left" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="33sp"
+            android:text="제목"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/toolbar"
+            android:layout_toEndOf="@+id/backButton"
+            android:layout_marginLeft="15dp" />
+
+        <GridView
+            android:id="@+id/category_list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="auto_fit"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:horizontalSpacing="11dp"
+            android:verticalSpacing="9dp"
+            android:columnWidth="110dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp" />
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:id="@+id/backButton"
+            android:layout_alignTop="@+id/toolbar"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/icon_navi05"
+            android:onClick="BackButton"/>
+    </RelativeLayout>
+</FrameLayout>

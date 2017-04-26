@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:background="@drawable/round_corner">
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_height="32dp"
+        android:layout_width="match_parent"
+        android:text="게시글 올리기"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="4dp"
+        android:background="#ff40c4ff"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/menu_title"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/editContents"
+        android:hint="설명을 입력하세요"
+        android:background="@color/color9"
+        android:layout_alignTop="@+id/linearLayoutBtns"
+        android:layout_alignEnd="@+id/menu_title"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/menu_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTitle"
+        android:hint="제목을 입력하세요"
+        android:background="@color/color9"
+        android:layout_alignBottom="@+id/linearLayoutBtns"
+        android:layout_alignEnd="@+id/menu_title"
+        android:layout_below="@+id/menu_title"
+        android:layout_alignStart="@+id/editContents" />
+</RelativeLayout>

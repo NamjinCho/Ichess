@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/HomeButton"
+    android:icon="@drawable/icon_navi01"
+    android:title="메인화면"
+    app:showAsAction="always"/>
+    <item android:id="@+id/GalleryButton"
+        android:icon="@drawable/icon_navi02"
+        android:title="갤러리"
+        app:showAsAction="always"/>
+    <item android:id="@+id/SettingButton"
+        android:icon="@drawable/icon_navi03"
+        android:title="설정"
+        app:showAsAction="always"/>
+    <item android:id="@+id/videoButton"
+        android:title="동영상 보기"/>
+    <item android:id="@+id/routeButton"
+        android:title="약도 보기"/>
+    <item android:id="@+id/logoutButton"
+        android:title="로그아웃"/>
+
+</menu>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_width="288dp"
+    android:layout_height="50dp"
+    android:id="@+id/subMenu"
+    android:src="@drawable/btn_white"
+    android:scaleType="fitXY"
+    />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/icon_plus_blue"
+        android:id="@+id/plusIcon"
+        android:layout_marginLeft="100dp"
+        android:visibility="invisible"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="문제만들기"
+        android:visibility="invisible"
+        android:textColor="#629aca"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="160dp"
+        android:id="@+id/plusTitle"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/subMenuTitle"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#629aca"
+        android:layout_alignTop="@+id/subMenu"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageView
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bg_make_black"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView34" />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout4"
+        android:onClick="EditButton"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/thumb"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="13dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView32"
+            android:src="@drawable/icon_write_01_blue"
+            android:layout_alignBottom="@+id/frameLayout4"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="수정"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView28"
+            android:layout_marginLeft="25dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout5"
+        android:onClick="DeleteButton"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/title"
+        android:layout_marginLeft="188dp"
+        android:layout_marginTop="13dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView31"
+            android:src="@drawable/icon_write_02_blue"
+            android:layout_alignBottom="@+id/frameLayout4"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="삭제"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView29"
+            android:layout_marginLeft="25dp" />
+    </FrameLayout>
+</FrameLayout>

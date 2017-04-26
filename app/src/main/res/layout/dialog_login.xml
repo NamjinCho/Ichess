@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:background="#6d6cc2">
+
+    <EditText
+        android:id="@+id/userID"
+        android:layout_height="39dp"
+        android:layout_width="227dp"
+
+        android:hint="아이디를 입력하세요."
+        android:background="@drawable/bg_input_login"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:paddingLeft="5dp"
+        android:paddingTop="1dp"
+        android:textSize="14dp"
+        android:paddingBottom="1dp"
+        android:typeface="sans"
+        android:layout_marginRight="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:inputType="numberDecimal"
+        android:layout_height="39dp"
+        android:layout_width="227dp"
+        android:background="@drawable/bg_input_login"
+        android:hint="비밀번호를 입력하세요."
+        android:ems="15"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:paddingLeft="5dp"
+        android:paddingTop="1dp"
+        android:textSize="14dp"
+        android:paddingBottom="1dp"
+        android:typeface="sans"
+        android:layout_marginRight="72dp"
+        android:layout_below="@+id/userID"
+        android:layout_alignStart="@+id/userID" />
+    <LinearLayout
+        android:id="@+id/linearLayoutBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="72dp">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:textSize="14dp"
+        android:text="로그인"
+        android:typeface="sans"
+        android:background="#ff0986be"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_above="@+id/userPassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="72dp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="113dp"
+        android:layout_height="50dp"
+        android:textSize="14dp"
+        android:text="취소"
+        android:typeface="sans"
+        android:background="#ff0986be"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_above="@+id/textView9"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="72dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:gravity="center"
+        android:id="@+id/textView8"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginRight="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:id="@+id/textView9"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginLeft="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="40dp" />
+</RelativeLayout>

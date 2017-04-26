@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_basic">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="437dp"
+        android:layout_height="220dp"
+        android:background="@drawable/roundbox"
+        android:layout_below="@+id/imageView9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:id="@+id/textView10"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/idBox"
+                android:layout_marginRight="65dp" />
+
+            <EditText
+                android:layout_width="227dp"
+                android:layout_height="39dp"
+                android:id="@+id/idBox"
+                android:textColor="#000000"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_input_login"
+                android:layout_marginRight="62dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="437dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:id="@+id/textView11"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/passwordBox"
+                android:layout_marginRight="50dp" />
+
+            <EditText
+                android:layout_width="227dp"
+                android:layout_height="39dp"
+                android:id="@+id/passwordBox"
+                android:textColor="#000000"
+                android:background="@drawable/bg_input_login"
+                android:inputType="numberPassword"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="62dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="62dp"
+                android:id="@+id/cancel_button"
+                android:onClick="cancle_login">
+
+            <ImageView
+                android:layout_width="113dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView10"
+                android:src="@drawable/btn_small"
+                android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#898989"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="취소"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="62dp"
+                android:id="@+id/login_button"
+                android:onClick="ok_login"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView11"
+                    android:src="@drawable/btn_small"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6a67c2"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="로그인"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:id="@+id/imageView9"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:src="@drawable/logo_login01"
+        android:layout_marginTop="25dp" />
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color9"
+    android:weightSum="1"
+    android:id="@id/RootView">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleText"
+        android:layout_weight="0.21"
+        android:text="제목"
+        android:hint="제목을 입력하세요."
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextLevel"
+        android:hint="강의를 볼 수 있는 최소 레벨을 입력하세요."
+        android:layout_weight="0.21" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.21">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonPre"
+            android:src="@drawable/pre_icon_2"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonNext"
+            android:src="@drawable/next_icon_2"
+            android:layout_alignBottom="@+id/buttonPre"
+            android:layout_toRightOf="@+id/buttonPre" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="153dp">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="155dp"
+        android:id="@+id/outer"
+        android:src="@drawable/btn_white"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:id="@+id/imageView30"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_make_black"/>
+    <ImageView
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:id="@+id/thumb"
+        android:src="@drawable/thumb_blue_01"
+        android:padding="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="기물 이동"
+        android:textSize="12sp"
+        android:textColor="#629aca"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:layout_below="@+id/thumb"
+        android:layout_alignStart="@+id/thumb"
+        android:layout_marginLeft="3dp"
+        android:layout_alignEnd="@+id/thumb"
+        android:layout_marginRight="3dp" />
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout4"
+        android:layout_alignTop="@+id/thumb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="EditButton">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView32"
+            android:src="@drawable/icon_write_01_blue"
+            android:layout_alignBottom="@+id/frameLayout4"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="수정"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView28"
+            android:layout_marginLeft="25dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout5"
+        android:onClick="DeleteButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView31"
+            android:src="@drawable/icon_write_02_blue"
+            android:layout_alignBottom="@+id/frameLayout4"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="삭제"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView29"
+            android:layout_marginLeft="25dp" />
+    </FrameLayout>
+
+</RelativeLayout>
